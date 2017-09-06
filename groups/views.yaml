@@ -1,0 +1,10 @@
+default_view:
+    view: yes
+    entities:
+      - group.living_room
+      - group.living_room_entertainment_stand
+      - group.master_bedroom
+      - group.all_automations
+      - group.misc_lights
+      - group.outside_lights
+      - cover.garage_door

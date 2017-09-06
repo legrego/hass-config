@@ -1,0 +1,31 @@
+switch:
+  - platform: mqtt
+    name: "TV Switch"
+    icon: mdi_television
+    state_topic: "home/livingroom/tv_switch/state"
+    command_topic: "home/livingroom/tv_switch"
+    payload_on: 255
+    payload_off: 0
+
+  - platform: mqtt
+    name: "Cable Box Switch"
+    state_topic: "home/livingroom/cable_switch/state"
+    command_topic: "home/livingroom/cable_switch"
+    payload_on: 255
+    payload_off: 0
+
+  - platform: mqtt
+    name: "XBox Switch"
+    icon: mdi:xbox
+    state_topic: "home/livingroom/xbox_switch/state"
+    command_topic: "home/livingroom/xbox_switch"
+    payload_on: 255
+    payload_off: 0
+
+  - platform: mqtt
+    name: "Printer Switch"
+    icon: mdi_printer
+    state_topic: "home/livingroom/printer_switch/state"
+    command_topic: "home/livingroom/printer_switch"
+    payload_on: 255
+    payload_off: 0

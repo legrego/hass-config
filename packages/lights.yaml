@@ -1,0 +1,49 @@
+switch:
+  - platform: mqtt
+    name: "Front Lights"
+    state_topic: "home/outside/front_lights/state"
+    command_topic: "home/outside/front_lights"
+    payload_on: 255
+    payload_off: 0
+
+  - platform: mqtt
+    name: "Living Room Floor Light"
+    state_topic: "home/livingroom/floor_light/state"
+    command_topic: "home/livingroom/floor_light"
+    payload_on: 255
+    payload_off: 0
+  - platform: mqtt
+  
+    name: "Living Room Table Light"
+    state_topic: "home/livingroom/table_light/state"
+    command_topic: "home/livingroom/table_light"
+    payload_on: 255
+    payload_off: 0
+
+  - platform: mqtt
+    name: "Fireplace Light"
+    state_topic: "home/livingroom/fireplace_light/state"
+    command_topic: "home/livingroom/fireplace_light"
+    payload_on: 99
+    payload_off: 0
+
+  - platform: mqtt
+    name: "Sitting Room Floor Light"
+    state_topic: "home/sittingroom/floor_light/state"
+    command_topic: "home/sittingroom/floor_light"
+    payload_on: 255
+    payload_off: 0
+
+  - platform: mqtt
+    name: "Sitting Room Stair Light"
+    state_topic: "home/sittingroom/stair_light/state"
+    command_topic: "home/sittingroom/stair_light"
+    payload_on: 255
+    payload_off: 0
+
+  - platform: mqtt
+    name: "Office Light"
+    state_topic: "home/office/floor_light/state"
+    command_topic: "home/office/floor_light"
+    payload_on: 255
+    payload_off: 0

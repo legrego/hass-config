@@ -1,0 +1,4 @@
+outside_lights:
+    name: Outside Lights
+    entities:
+      - switch.front_lights

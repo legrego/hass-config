@@ -1,0 +1,35 @@
+- id: location_sync_1
+  alias: !secret location_sync_1_alias
+  trigger:
+  - platform: state
+    entity_id: device_tracker.larry_iphone6s
+  action:
+  - service: mqtt.publish
+    data:
+      topic: device_tracker/larry
+      payload_template: >
+        {% if is_state('device_tracker.larry_iphone6s', 'home') %} 
+          0 
+        {% elif is_state('device_tracker.larry_iphone6s', 'not_home') or is_state('device_tracker.larry_iphone6s', 'away') %}
+          1 
+        {% else %}
+          1
+        {% endif %}
+
+- id: location_sync_2
+  alias: !secret location_sync_2_alias
+  trigger:
+  - platform: state
+    entity_id: device_tracker.amanda_arodiphone
+  action:
+  - service: mqtt.publish
+    data:
+      topic: device_tracker/amanda
+      payload_template: >
+        {% if is_state('device_tracker.amanda_arodiphone', 'home') %} 
+          0 
+        {% elif is_state('device_tracker.amanda_arodiphone', 'not_home') or is_state('device_tracker.amanda_arodiphone', 'away') %}
+          1 
+        {% else %}
+          1
+        {% endif %}

@@ -1,0 +1,25 @@
+intent_script:
+  TVIntent:
+    speech: 
+      text: Turn the TV on yourself!
+  WakeAlarmIntent:
+    speech: 
+      text: Get yourself our of bed instead!
+  WhereAreWeIntent:
+    speech: 
+      text: I have no idea where you are!
+  SleepIntent:
+    speech:
+      text: Goodnight!
+
+# Enables the Emulated Hue Bridge for Alexa discovery of HA entities
+emulated_hue:
+  expose_by_default: true
+  exposed_domains:
+    - switch
+    - light
+    - group
+    - input_boolean
+    - media_player
+    - fan
+    - cover

@@ -1,0 +1,15 @@
+living_room:
+  name: Living Room
+  entities:
+    - switch.fireplace
+    - switch.living_room_floor_light
+    - switch.living_room_table_light
+    - switch.fireplace_light
+
+living_room_entertainment_stand:
+  name: Entertainment Stand
+  entities:
+    - switch.printer_switch
+    - switch.xbox_switch
+    - switch.cable_box_switch
+    - switch.tv_switch

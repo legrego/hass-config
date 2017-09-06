@@ -1,0 +1,31 @@
+switch:
+  - platform: mqtt
+    name: "Fireplace"
+    icon: mdi:radiator
+    state_topic: "home/livingroom/fireplace/state"
+    command_topic: "home/livingroom/fireplace"
+    payload_on: 255
+    payload_off: 0
+
+fan:
+  - platform: mqtt
+    name: "Master Bedroom Fan"
+    state_topic: "home/masterbedroom/fan/state"
+    speed_state_topic: "home/masterbedroom/fan/state"
+    speed_command_topic: "home/masterbedroom/fan"
+    command_topic: "home/masterbedroom/fan"
+    payload_on: 255
+    payload_off: 0
+    payload_low_speed: 33
+    payload_medium_speed: 66
+    payload_high_speed: 99
+
+cover:
+  platform: mqtt
+  name: "Garage Door"
+  state_topic: "home/garage/door/state"
+  command_topic: "home/garage/door"
+  payload_open: 255
+  payload_close: 0
+  state_open: 255
+  state_closed: 0

@@ -1,0 +1,89 @@
+homeassistant:
+  # Name of the location where Home Assistant is running
+  name: Home
+  # Location required to calculate the time the sun rises and sets
+  latitude: !secret latitude_home
+  longitude: !secret longitude_home
+  elevation: 103
+  # unit system: imperial/metric
+  unit_system: imperial
+  # Pick yours from here: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+  time_zone: America/New_York
+
+  customize: !include_dir_merge_named customize
+  packages: !include_dir_named packages
+
+# Enables the frontend
+frontend:
+
+recorder:
+  purge_days: 5
+
+# Enable Configuration Panel
+config:
+
+# Enable alexa integration
+alexa:
+
+# HTTP Settings
+http:
+  api_password: !secret api_password
+  server_port: 9123
+  base_url: !secret base_url
+
+# Disable reporting metrics with the updater
+updater:
+  reporting: no
+
+# Allows you to issue voice commands from the frontend
+conversation:
+
+# View all events in a logbook
+logbook:
+
+# Enables support for tracking state changes over time.
+history:
+
+# Discover some devices automatically
+discovery:
+
+# Enable iOS Component
+#ios:
+
+# Show links to resources in log and frontend
+
+# Prediction of weather
+sensor:
+  - platform: darksky
+    api_key: !secret darksky_api_key
+    monitored_conditions:
+      - summary
+      - icon
+      - temperature
+      - humidity
+
+mqtt:
+  broker: localhost
+  port: 1883
+  client_id: !secret mqtt_client_id
+  keepalive: 60
+  username: !secret mqtt_username
+  password: !secret mqtt_password
+  protocol: 3.1.1
+  
+device_tracker:
+  platform: owntracks
+  max_gps_accuracy: 200
+  
+#media_player:
+#  - platform: spotify
+#    client_id: !secret spotify_client_id
+#    client_secret: !secret spotify_client_secret
+
+################################################
+## Component Includes (Merge List)
+################################################
+automation: !include automations.yaml
+group: !include_dir_merge_named groups
+# script: !include_dir_merge_named script
+zone: !include_dir_merge_list zone
