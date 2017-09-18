@@ -1,3 +1,6 @@
+light:
+  - platform: lifx
+  
 switch:
   - platform: mqtt
     name: "Front Lights"

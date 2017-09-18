@@ -2,3 +2,4 @@ outside_lights:
     name: Outside Lights
     entities:
       - switch.front_lights
+      - light.outside_lightpost
