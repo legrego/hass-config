@@ -1,0 +1,14 @@
+sensor:
+  - platform: rest
+    name: holiday
+    resource: https://holidays.devapis.io/v1/today
+    method: GET
+    headers:
+      Accept: "application/json"
+      X-API-Key: !secret devapis_key
+    value_template: >
+      {% if value_json.isHoliday %}
+        {{ value_json.holiday.name | lower | replace(" ", "_") | replace("'", "")}}
+      {% else %}
+        {{ value_json.isHoliday }}
+      {% endif %}

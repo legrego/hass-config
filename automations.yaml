@@ -33,3 +33,51 @@
         {% else %}
           1
         {% endif %}
+
+- id: non_holiday_color_sync
+  alias: "Non-Holiday Color Sync"
+  # Check once per day - noon is a good of a time as any, since we won't have these lights turned on before then anyway
+  trigger:
+  - platform: time
+    at: '12:00:00'
+  condition: 
+    condition: state
+    entity_id: sensor.holiday
+    state: "false"
+  action:
+  - service: light.lifx_set_state
+    data_template:
+      kelvin: 3500
+      brightness_pct: 60
+
+- id: holiday_color_sync
+  alias: "Holiday Color Sync"
+  # Check once per day - noon is a good of a time as any, since we won't have these lights turned on before then anyway
+  trigger:
+  - platform: time
+    at: '12:00:00'
+  condition: 
+    condition: template
+    value_template: '{{ is_state("sensor.holiday", "false") == false}}'
+  action:
+  - service: light.lifx_set_state
+    data_template:
+      brightness_pct: 60
+      color_name: >
+        {% if is_state("sensor.holiday", "christmas") or is_state("sensor.holiday", "christmas_eve") %}
+          green
+        {% elif is_state("sensor.holiday", "new_years_day") or is_state("sensor.holiday", "new_years_eve") or is_state("sensor.holiday", "mardi_gras") %}
+          purple
+        {% elif is_state("sensor.holiday", "halloween") or is_state("sensor.holiday", "thanksgiving_day") %}
+          orange
+        {% elif is_state("sensor.holiday", "mothers_day") %}
+          pink
+        {% elif is_state("sensor.holiday", "fathers_day") or is_state("sensor.holiday", "independence_day") or is_state("sensor.holiday", "memorial_day") or is_state("sensor.holiday", "veterans_day") %}
+          blue
+        {% elif is_state("sensor.holiday", "easter") or is_state("sensor.holiday", "easter_sunday") %}
+          lavender
+        {% elif is_state("sensor.holiday", "saint_patricks_day")%}
+          dark spring green
+        {% else %}
+          white
+        {% endif %}
