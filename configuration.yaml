@@ -17,7 +17,8 @@ homeassistant:
 frontend:
 
 recorder:
-  purge_days: 5
+  purge_interval: 3
+  purge_keep_days: 7
 
 # Enable Configuration Panel
 config:
