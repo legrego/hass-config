@@ -1,0 +1,6 @@
+holiday_lights:
+  name: Christmas Lights
+  entities:
+    - switch.sitting_room_stair_light
+    - switch.outdoor_switch_1
+    - switch.outdoor_switch_2

@@ -7,4 +7,5 @@ default_view:
       - group.all_automations
       - group.misc_lights
       - group.outside_lights
+      - group.holiday_lights
       - cover.garage_door
