@@ -43,3 +43,17 @@ switch:
     command_topic: "home/outside/switch_2"
     payload_on: 255
     payload_off: 0
+
+  - platform: mqtt
+    name: "Removable Plug 1"
+    state_topic: "home/sittingroom/plug_1/state"
+    command_topic: "home/sittingroom/plug_1"
+    payload_on: 255
+    payload_off: 0
+
+  - platform: mqtt
+    name: "Removable Plug 2"
+    state_topic: "home/livingroom/plug_2/state"
+    command_topic: "home/livingroom/plug_2"
+    payload_on: 255
+    payload_off: 0
