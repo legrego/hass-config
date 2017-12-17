@@ -1,6 +1,7 @@
 default_view:
     view: yes
     entities:
+      - alarm_control_panel.alarmcom
       - group.living_room
       - group.living_room_entertainment_stand
       - group.master_bedroom
