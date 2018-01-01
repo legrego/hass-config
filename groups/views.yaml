@@ -9,4 +9,4 @@ default_view:
       - group.misc_lights
       - group.outside_lights
       - group.holiday_lights
-      - cover.garage_door
+      - group.garage

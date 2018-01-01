@@ -1,0 +1,23 @@
+binary_sensor:
+  - platform: mqtt
+    name: "Garage Motion"
+    state_topic: "home/garage/motion"
+    device_class: "motion"
+    payload_on: 255
+    payload_off: 0
+
+sensor:
+  - platform: mqtt
+    name: "Garage Temperature"
+    unit_of_measurement: "°F"
+    state_topic: "home/garage/temperature"
+
+  - platform: mqtt
+    name: "Garage Humidity"
+    unit_of_measurement: "%"
+    state_topic: "home/garage/humidity"
+
+  - platform: mqtt
+    name: "Garage Luminance"
+    unit_of_measurement: "Lux"
+    state_topic: "home/garage/luminance"

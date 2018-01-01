@@ -1,0 +1,9 @@
+garage:
+  name: "Garage"
+  icon: "mdi:radiator"
+  entities:
+    - cover.garage_door
+    - binary_sensor.garage_motion
+    - sensor.garage_temperature
+    - sensor.garage_humidity
+    - sensor.garage_luminance
