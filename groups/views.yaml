@@ -9,6 +9,11 @@ default_view:
       - group.outside_lights
       - group.holiday_lights
       - group.garage
+      
+music:
+  view: yes
+  entities:
+    - group.first_floor_audio
 
 system:
   view: yes

@@ -1,0 +1,6 @@
+first_floor_audio:
+  name: "First Floor Audio"
+  entities:
+    - media_player.first_floor
+    - media_player.dining_room
+    - media_player.kitchen_speaker
