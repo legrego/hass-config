@@ -7,3 +7,27 @@ sensor.garage_humidity:
 
 sensor.garage_luminance:
   icon: "mdi:brightness-5"
+
+switch.fireplace:
+  icon: "mdi:radiator"
+
+switch.front_lights:
+  icon: "mdi:lightbulb"
+
+switch.living_room_floor_light:
+  icon: "mdi:lightbulb"
+
+switch.living_room_table_light:
+  icon: "mdi:lightbulb"
+
+switch.fireplace_light:
+  icon: "mdi:lightbulb"
+
+switch.sitting_room_floor_light:
+  icon: "mdi:lightbulb"
+
+switch.sitting_room_stair_light:
+  icon: "mdi:lightbulb"
+
+switch.office_light:
+  icon: "mdi:lightbulb"
