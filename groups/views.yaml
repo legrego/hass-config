@@ -1,12 +1,22 @@
 default_view:
     view: yes
     entities:
-      - alarm_control_panel.alarmcom
+      - group.security
       - group.living_room
-      - group.living_room_entertainment_stand
+      - group.fireplace
       - group.master_bedroom
-      - group.all_automations
       - group.misc_lights
       - group.outside_lights
       - group.holiday_lights
       - group.garage
+
+system:
+  view: yes
+  entities:
+    - group.all_automations
+    - group.living_room_entertainment_stand
+
+upstairs:
+  view: yes
+  entities:
+    - group.master_bedroom

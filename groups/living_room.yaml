@@ -1,10 +1,14 @@
 living_room:
   name: Living Room
   entities:
-    - switch.fireplace
     - switch.living_room_floor_light
     - switch.living_room_table_light
     - switch.fireplace_light
+
+fireplace:
+  name: Fireplace
+  entities:
+    - switch.fireplace
 
 living_room_entertainment_stand:
   name: Entertainment Stand
