@@ -1,4 +1,4 @@
 security:
   name: "Security"
   entities:
-    - alarm_control_panel.alarmcom
+    - alarm_control_panel.security_system
