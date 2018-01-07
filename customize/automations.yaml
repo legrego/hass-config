@@ -1,9 +1,41 @@
+cover.garage_door:
+  homebridge_cover_type: "garage_door"
+  
 group.all_automations:
   friendly_name: "All Automations"
   hidden: false
+  homebridge_hidden: true
+
+group.all_covers:
+  homebridge_hidden: true
+  
+group.all_devices:
+  homebridge_hidden: true
+
+group.all_fans:
+  homebridge_hidden: true
+
+group.all_switches:
+  homebridge_hidden: true
+
+group.default_view:
+  homebridge_hidden: true
+
+group.security:
+  homebridge_hidden: true
+
+group.system:
+  homebridge_hidden: true
+
+group.audio:
+  homebridge_hidden: true
+
+group.upstairs:
+  homebridge_hidden: true
 
 group.fireplace:
   emulated_hue_hidden: true
+  homebridge_hidden: true
 
 sensor.garage_humidity:
   icon: "mdi:water-percent"
