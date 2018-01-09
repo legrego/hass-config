@@ -45,9 +45,9 @@ switch:
     payload_off: 0
 
   - platform: mqtt
-    name: "Removable Plug 1"
-    state_topic: "home/sittingroom/plug_1/state"
-    command_topic: "home/sittingroom/plug_1"
+    name: "Kitchen Speaker Plug"
+    state_topic: "home/kitchen/speaker_plug/state"
+    command_topic: "home/kitchen/speaker_plug"
     payload_on: 255
     payload_off: 0
 

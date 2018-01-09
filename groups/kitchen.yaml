@@ -1,0 +1,5 @@
+kitchen:
+  name: "Kitchen"
+  entities:
+    - switch.kitchen_speaker_plug
+    - switch.coffee_bar_light

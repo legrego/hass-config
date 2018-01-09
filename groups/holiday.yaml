@@ -4,5 +4,4 @@ holiday_lights:
     - switch.sitting_room_stair_light
     - switch.outdoor_switch_1
     - switch.outdoor_switch_2
-    - switch.removable_plug_1
     - switch.removable_plug_2

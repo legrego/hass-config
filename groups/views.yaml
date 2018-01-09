@@ -4,10 +4,10 @@ default_view:
       - group.security
       - group.living_room
       - group.fireplace
+      - group.kitchen
       - group.master_bedroom
-      - group.misc_lights
+      - group.office
       - group.outside_lights
-      - group.holiday_lights
       - group.garage
       
 music:
@@ -20,6 +20,7 @@ system:
   entities:
     - group.all_automations
     - group.living_room_entertainment_stand
+    - switch.kitchen_speaker_plug
 
 upstairs:
   view: yes

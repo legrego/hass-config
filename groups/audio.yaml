@@ -4,3 +4,4 @@ first_floor_audio:
     - media_player.first_floor
     - media_player.dining_room
     - media_player.kitchen_speaker
+    - media_player.office

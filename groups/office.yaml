@@ -1,0 +1,4 @@
+office:
+    name: Office
+    entities:
+      - switch.office_light

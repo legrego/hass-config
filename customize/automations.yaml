@@ -1,6 +1,6 @@
 cover.garage_door:
   homebridge_cover_type: "garage_door"
-  
+
 group.all_automations:
   friendly_name: "All Automations"
   hidden: false
@@ -30,6 +30,12 @@ group.system:
 group.audio:
   homebridge_hidden: true
 
+group.kitchen:
+  homebridge_hidden: true
+
+group.office:
+  homebridge_hidden: true
+
 group.upstairs:
   homebridge_hidden: true
 
@@ -55,7 +61,7 @@ switch.living_room_floor_light:
 switch.living_room_table_light:
   icon: "mdi:lightbulb"
 
-switch.fireplace_light:
+light.fireplace_light:
   icon: "mdi:lightbulb"
 
 switch.sitting_room_floor_light:
@@ -65,4 +71,10 @@ switch.sitting_room_stair_light:
   icon: "mdi:lightbulb"
 
 switch.office_light:
+  icon: "mdi:lightbulb"
+
+switch.kitchen_speaker_plug:
+  icon: "mdi:speaker"
+
+switch.coffee_bar_light:
   icon: "mdi:lightbulb"

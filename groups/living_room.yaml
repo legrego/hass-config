@@ -3,7 +3,7 @@ living_room:
   entities:
     - switch.living_room_floor_light
     - switch.living_room_table_light
-    - switch.fireplace_light
+    - light.fireplace_light
 
 fireplace:
   name: Fireplace

@@ -1,0 +1,5 @@
+sitting_room:
+  name: "Sitting Room"
+  entities:
+    - switch.sitting_room_stair_light
+    - switch.sitting_room_floor_light

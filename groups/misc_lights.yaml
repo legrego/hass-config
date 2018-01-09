@@ -1,6 +1,0 @@
-misc_lights:
-    name: Misc. Lights
-    entities:
-      - switch.sitting_room_stair_light
-      - switch.sitting_room_floor_light
-      - switch.office_light
