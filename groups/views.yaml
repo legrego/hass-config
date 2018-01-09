@@ -5,7 +5,7 @@ default_view:
       - group.living_room
       - group.fireplace
       - group.kitchen
-      - group.master_bedroom
+      - group.sitting_room
       - group.office
       - group.outside_lights
       - group.garage
