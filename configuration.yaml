@@ -86,5 +86,5 @@ media_player:
 ################################################
 automation: !include automations.yaml
 group: !include_dir_merge_named groups
-# script: !include_dir_merge_named script
+script: !include_dir_merge_named script
 zone: !include_dir_merge_list zone

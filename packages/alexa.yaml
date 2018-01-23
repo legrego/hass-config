@@ -10,7 +10,12 @@ intent_script:
       text: I have no idea where you are!
   SleepIntent:
     speech:
-      text: Goodnight!
+      text: Beep Boop! Powering down in 2 minutes.
+    async_action: true
+    action:
+      - service: script.turn_on
+        entity_id: script.sleep_intent
+
 
 # Enables the Emulated Hue Bridge for Alexa discovery of HA entities
 emulated_hue:
