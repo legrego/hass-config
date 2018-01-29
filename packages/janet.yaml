@@ -142,7 +142,7 @@ script:
               I'm Janet. {{ introduction | random }}
             {%- endmacro -%}
 
-          # http://combineoverwiki.net/wiki/GLaDOS/Quotes/Portal
+          {# http://combineoverwiki.net/wiki/GLaDOS/Quotes/Portal #}
             {%- macro glados_quote() -%}
               {% set glados_quote = [
                 "We are soooo happy you made it. ",
