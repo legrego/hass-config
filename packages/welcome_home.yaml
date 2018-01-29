@@ -1,0 +1,44 @@
+sensor:
+  - platform: mqtt
+    name: "Welcome Home"
+    state_topic: "scene/welcome_home"
+    expire_after: 30
+
+automation:
+  - id: welcome_home_amanda
+    alias: Welcome Home Amanda
+    trigger:
+      - platform: state
+        entity_id: sensor.welcome_home
+        to: 'Amanda'
+
+    action:
+      - service: script.janet_speech_engine
+        data:
+          call_welcome_home: 1
+          person: Amanda
+
+  - id: welcome_home_larry
+    alias: Welcome Home Larry
+    trigger:
+      - platform: state
+        entity_id: sensor.welcome_home
+        to: 'Larry'
+
+    action:
+      - service: script.janet_speech_engine
+        data:
+          call_welcome_home: 1
+          person: Larry
+
+  - id: welcome_home_both
+    alias: Welcome Home Both
+    trigger:
+      - platform: state
+        entity_id: sensor.welcome_home
+        to: 'Both'
+
+    action:
+      - service: script.janet_speech_engine
+        data:
+          CustomMessage: "Welcome home, Amanda and Larry!"

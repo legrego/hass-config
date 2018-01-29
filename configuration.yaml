@@ -51,7 +51,14 @@ discovery:
 # Enable iOS Component
 #ios:
 
-# Show links to resources in log and frontend
+# TTS
+tts:
+  - platform: amazon_polly
+    aws_access_key_id: !secret polly_access
+    aws_secret_access_key: !secret polly_secret
+    voice: Joanna
+    text_type: ssml
+
 
 # Prediction of weather
 sensor:
