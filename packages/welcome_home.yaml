@@ -4,7 +4,28 @@ sensor:
     state_topic: "scene/welcome_home"
     expire_after: 30
 
+  - platform: mqtt
+    name: "Prep House for Occupancy Trigger"
+    state_topic: "scene/occupy_home"
+    expire_after: 30
+
 automation:
+  - id: prep_house_for_occupancy
+    alias: "Prep House for Occupancy"
+    trigger:
+      - platform: state
+        entity_id: sensor.prep_house_for_occupancy_trigger
+        to: 'true'
+    condition:
+      condition: or
+      conditions:
+        - condition: state
+          entity_id: media_player.first_floor
+          state: 'off'
+    action:
+      - service: media_player.turn_on
+        entity_id: media_player.first_floor
+
   - id: welcome_home_amanda
     alias: Welcome Home Amanda
     trigger:

@@ -142,37 +142,19 @@ script:
               I'm Janet. {{ introduction | random }}
             {%- endmacro -%}
 
-          {# http://combineoverwiki.net/wiki/GLaDOS/Quotes/Portal #}
-            {%- macro glados_quote() -%}
-              {% set glados_quote = [
+            {%- macro witty_someone_home() -%}
+              {% set witty_someone_home = [
                 "We are soooo happy you made it. ",
                 "It's about time you showed up. ",
                 "What took you so long? ",
                 "You're pokey. ",
-                "You're doing very well!",
-                "Please be careful.",
-                "Please note that we have added a consequence for failure. Any contact with the floor will result in an 'unsatisfactory' mark on your official testing record followed by death. Good luck!",
-                "Frankly, this chamber was a mistake. If we were you, we would quit now.",
+                "I missed you. Is that creepy?",
                 "No one will blame you for giving up. In fact, quitting at this point is a perfectly reasonable response.",
                 "Quit now and cake will be served immediately.",
-                "Fantastic! You remained resolute and resourceful in an atmosphere of extreme pessimism.",
                 "The floor here will kill you...try to avoid it.",
-                "Weeeeeeeeeeeeeeeeeeeeee",
-                "If you become light headed from thirst, feel free to pass out.",
-                "As part of a previously mentioned required test protocol, we can no longer lie to you.",
-                "When the testing is over, you will be missed.",
-                "The Enrichment Center is committed to the well being of all participants.",
-                "Cake and grief counseling will be available at the conclusion of the test.",
-                "Thank you for helping us help you help us all.",
-                "Did you know you can donate one or all of your vital organs to the Aperture Science self esteem fund for girls? It's true!",
-                "Please escort your Companion to the Aperture Science Emergency Intelligence Incinerator.",
-                "Testing cannot continue until your Companion has been incinerated.",
-                "Although the euthanizing process is remarkably painful, eight out of ten Aperture Science engineers believe that the Companion Cube is most likely incapable of feeling much pain.",
-                "The Companion Cube cannot continue through the testing. State and Local statutory regulations prohibit it from simply remaining here, alone and companionless. You must euthanize it.",
-                "You euthanized your faithful Companion Cube more quickly than any test subject on record. Congratulations.",
-                "The Enrichment Center reminds you that the Weighted Companion Cube will never threaten to stab you and, in fact, cannot speak."
+                "Weeeeeeeeeeeeeeeeeeeeee"
               ] %}
-              {{ glados_quote | random }}
+              {{ witty_someone_home | random }}
             {%- endmacro -%}
 
             {%- macro unknown() -%}
@@ -385,7 +367,7 @@ script:
             {% endif %}
 
             {% if call_welcome_home == 1 %}
-              {{ welcome_home( witty( glados_quote(), chance) ) }}
+              {{ welcome_home( witty( witty_someone_home(), chance) ) }}
             {% endif %}
 
       - service: input_boolean.turn_off
