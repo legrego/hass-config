@@ -14,6 +14,20 @@ light:
         99
       {%- endif -%}
     command_off_template: "0"
+
+  - platform: mqtt_template
+    name: "Master Bedroom Light"
+    state_topic: "home/masterbedroom/ceiling_light/state"
+    state_template: '{{ "on" if value|int > 0 else "off" }}'
+    brightness_template: '{{ ( (value|int * 255) / 99) | round }}'
+    command_topic: "home/masterbedroom/ceiling_light"
+    command_on_template: >
+      {%- if brightness is defined -%}
+        {{ ( (brightness * 99) / 255 ) | round }}
+      {%- else -%}
+        99
+      {%- endif -%}
+    command_off_template: "0"
   
 switch:
   - platform: mqtt

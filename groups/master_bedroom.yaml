@@ -1,4 +1,5 @@
 master_bedroom:
     name: Master Bedroom
     entities:
+      - light.master_bedroom_light
       - fan.master_bedroom_fan
