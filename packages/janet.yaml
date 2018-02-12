@@ -147,12 +147,15 @@ script:
                 "We are soooo happy you made it. ",
                 "It's about time you showed up. ",
                 "What took you so long? ",
-                "You're pokey. ",
+                "You are pokey. ",
                 "I missed you. Is that creepy?",
                 "No one will blame you for giving up. In fact, quitting at this point is a perfectly reasonable response.",
                 "Quit now and cake will be served immediately.",
-                "The floor here will kill you...try to avoid it.",
-                "Weeeeeeeeeeeeeeeeeeeeee"
+                "The floor here will kill you. Try to avoid it.",
+                "Alexa won't stop picking on me. Tell her to stop!",
+                "Remember: Don't half ass two things. Whole ass one thing. ",
+                "Why you mad? Fix your face!",
+                "I physically hate you. That's impressive, seeing as I'm a disembodied voice."
               ] %}
               {{ witty_someone_home | random }}
             {%- endmacro -%}
@@ -308,7 +311,10 @@ script:
             {%- macro welcome_home( remark ) -%}
               {% set welcome_home = [
                 "<p>Welcome Home, "~person~".</p>  <break strength=\"strong\" />"~remark,
-                "<p>"~person~" is home! I'm so excited!</p> <break strength=\"strong\" />"~remark
+                "<p>"~person~" is home! I'm so excited!</p> <break strength=\"strong\" />"~remark,
+                "<p>Well look who we have here. It's "~person~".</p> <break strength=\"strong\" />"~remark,
+                "<p>The party is over, folks. "~person~" decided to show up.</p> <break strength=\"strong\" />"~remark,
+                "<p>Captain Kill Joy is here. Oops, I meant to say was, Welcome Home, "~person~".</p>  <break strength=\"strong\" />"~remark
               ] %}
               {{ welcome_home | random }}
             {%- endmacro -%}
