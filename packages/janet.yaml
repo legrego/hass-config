@@ -314,7 +314,7 @@ script:
                 "<p>"~person~" is home! I'm so excited!</p> <break strength=\"strong\" />"~remark,
                 "<p>Well look who we have here. It's "~person~".</p> <break strength=\"strong\" />"~remark,
                 "<p>The party is over, folks. "~person~" decided to show up.</p> <break strength=\"strong\" />"~remark,
-                "<p>Captain Kill Joy is here. Oops, I meant to say was, Welcome Home, "~person~".</p>  <break strength=\"strong\" />"~remark
+                "<p>Captain Kill Joy is here. Oops, I meant to say, Welcome Home, "~person~".</p>  <break strength=\"strong\" />"~remark
               ] %}
               {{ welcome_home | random }}
             {%- endmacro -%}
