@@ -9,6 +9,19 @@ sensor:
     state_topic: "scene/occupy_home"
     expire_after: 30
 
+  - platform: google_travel_time
+    name: amanda_distance_from_home
+    api_key: !secret google_travel_time_api_key
+    origin: device_tracker.amanda_arodiphone
+    destination: zone.home
+
+  - platform: google_travel_time
+    name: larry_distance_from_home
+    api_key: !secret google_travel_time_api_key
+    origin: device_tracker.larry_iphone6s
+    destination: zone.home
+  
+
 automation:
   - id: prep_house_for_occupancy
     alias: "Prep House for Occupancy"

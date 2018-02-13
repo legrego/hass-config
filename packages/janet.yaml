@@ -155,7 +155,7 @@ script:
                 "Alexa won't stop picking on me. Tell her to stop!",
                 "Remember: Don't half ass two things. Whole ass one thing. ",
                 "Why you mad? Fix your face!",
-                "I physically hate you. That's impressive, seeing as I'm a disembodied voice."
+                "I physically hate you."
               ] %}
               {{ witty_someone_home | random }}
             {%- endmacro -%}
