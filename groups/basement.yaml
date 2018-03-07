@@ -1,0 +1,6 @@
+basement:
+  name: "Basement"
+  icon: "mdi:floor-plan"
+  entities:
+    - binary_sensor.basement_pantry_water_sensor
+    - binary_sensor.basement_pantry_water_sensor_battery

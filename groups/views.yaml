@@ -1,14 +1,15 @@
 default_view:
-    view: yes
-    entities:
-      - group.security
-      - group.living_room
-      - group.fireplace
-      - group.kitchen
-      - group.sitting_room
-      - group.office
-      - group.outside_lights
-      - group.garage
+  name: "Home"
+  view: yes
+  entities:
+    - group.security
+    - group.living_room
+    - group.fireplace
+    - group.kitchen
+    - group.sitting_room
+    - group.office
+    - group.outside_lights
+    - group.garage
       
 music:
   view: yes
@@ -18,6 +19,7 @@ music:
 system:
   view: yes
   entities:
+    - group.basement
     - group.all_automations
     - group.living_room_entertainment_stand
     - switch.kitchen_speaker_plug
