@@ -14,8 +14,21 @@ binary_sensor:
     payload_off: 0
 
   - platform: mqtt
+    name: "Basement Furnace Water Sensor"
+    state_topic: "home/basement/furnace/water_sensor/state"
+    device_class: "moisture"
+    payload_on: 2
+    payload_off: 0
+
+  - platform: mqtt
     name: "Basement Pantry Water Sensor Battery"
     state_topic: "home/basement/pantry/water_sensor_battery/state"
+    device_class: "battery"
+    payload_on: 255
+
+  - platform: mqtt
+    name: "Basement Furnace Water Sensor Battery"
+    state_topic: "home/basement/furnace/water_sensor_battery/state"
     device_class: "battery"
     payload_on: 255
 

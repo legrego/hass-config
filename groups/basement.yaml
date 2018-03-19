@@ -4,3 +4,5 @@ basement:
   entities:
     - binary_sensor.basement_pantry_water_sensor
     - binary_sensor.basement_pantry_water_sensor_battery
+    - binary_sensor.basement_furnace_water_sensor
+    - binary_sensor.basement_furnace_water_sensor_battery
