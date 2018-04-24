@@ -1,0 +1,23 @@
+sensor:
+  - platform: miflora
+    name: "Office Plant"
+    mac: "C4:7C:8D:66:41:55"
+
+  - platform: miflora
+    name: "Sitting Room Plant"
+    mac: "C4:7C:8D:66:41:36"
+
+group:
+  office_plant:
+    name: Office Plant
+    entities:
+      - sensor.office_plant_moisture
+      - sensor.office_plant_temperature
+      - sensor.office_plant_battery
+
+  sitting_room_plant:
+    name: Sitting Room Plant
+    entities:
+      - sensor.sitting_room_plant_moisture
+      - sensor.sitting_room_plant_temperature
+      - sensor.sitting_room_plant_battery

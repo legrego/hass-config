@@ -22,6 +22,8 @@ system:
     - group.basement
     - group.all_automations
     - group.living_room_entertainment_stand
+    - group.office_plant
+    - group.sitting_room_plant
     - switch.kitchen_speaker_plug
 
 upstairs:
