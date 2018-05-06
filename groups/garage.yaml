@@ -4,6 +4,7 @@ garage:
   entities:
     - cover.garage_door
     - binary_sensor.garage_motion
+    - switch.garage_light
     - sensor.garage_temperature
     - sensor.garage_humidity
     - sensor.garage_luminance
