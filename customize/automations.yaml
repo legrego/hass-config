@@ -78,3 +78,12 @@ switch.kitchen_speaker_plug:
 
 switch.coffee_bar_light:
   icon: "mdi:lightbulb"
+
+switch.kitchen_island:
+  icon: "mdi:lightbulb"
+
+switch.kitchen_outer_recessed:
+  icon: "mdi:lightbulb"
+
+switch.kitchen_inner_recessed:
+  icon: "mdi:lightbulb"
