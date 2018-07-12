@@ -87,6 +87,13 @@ switch:
     payload_off: 0
 
   - platform: mqtt
+    name: "Kitchen Table"
+    state_topic: "home/kitchen/table_light/state"
+    command_topic: "home/kitchen/table_light"
+    payload_on: 255
+    payload_off: 0
+
+  - platform: mqtt
     name: "Kitchen Outer Recessed"
     state_topic: "home/kitchen/outer_recessed_light/state"
     command_topic: "home/kitchen/outer_recessed_light"

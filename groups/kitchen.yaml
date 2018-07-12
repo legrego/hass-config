@@ -4,5 +4,6 @@ kitchen:
     - switch.kitchen_speaker_plug
     - switch.coffee_bar_light
     - switch.kitchen_island
+    - switch.kitchen_table
     - switch.kitchen_outer_recessed
     - switch.kitchen_inner_recessed
