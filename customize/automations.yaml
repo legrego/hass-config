@@ -87,3 +87,6 @@ switch.kitchen_outer_recessed:
 
 switch.kitchen_inner_recessed:
   icon: "mdi:lightbulb"
+
+switch.kitchen_table:
+  icon: "mdi:lightbulb"
