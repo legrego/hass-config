@@ -92,8 +92,13 @@ mqtt:
   protocol: 3.1.1
   
 device_tracker:
-  platform: owntracks
-  max_gps_accuracy: 200
+  - platform: owntracks
+    max_gps_accuracy: 200
+
+  - platform: icloud
+    username: !secret icloud_larry_username
+    password: !secret icloud_larry_password
+    account_name: Larry
   
 media_player:
   - platform: spotify
