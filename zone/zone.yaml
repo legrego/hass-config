@@ -1,0 +1,20 @@
+################################################################
+## Zone
+################################################################
+- name: Home
+  latitude: !secret latitude_home
+  longitude: !secret longitude_home
+  radius: 300
+  icon: mdi:home-outline
+
+- name: amanda_work
+  latitude: !secret latitude_amanda_work
+  longitude: !secret longitude_amanda_work
+  radius: 300
+  icon: mdi:worker
+
+- name: larry_work
+  latitude: !secret latitude_larry_work
+  longitude: !secret longitude_larry_work
+  radius: 1000
+  icon: mdi:worker

@@ -1,0 +1,14 @@
+homekit:
+  auto_start: false
+  filter:
+    exclude_domains:
+      - group
+
+automation:
+  - alias: Start HomeKit
+    trigger:
+      - platform: homeassistant
+        event: start
+    action:
+      - delay: 00:02
+      - service: homekit.start
