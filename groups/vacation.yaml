@@ -1,0 +1,4 @@
+vacation:
+  name: "Vacation"
+  entities:
+    - switch.vacation

@@ -19,6 +19,7 @@ music:
 system:
   view: yes
   entities:
+    - group.vacation
     - group.basement
     - group.all_automations
     - group.living_room_entertainment_stand

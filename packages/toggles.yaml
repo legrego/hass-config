@@ -1,0 +1,9 @@
+switch:
+  platform: mqtt
+  name: "Vacation"
+  state_topic: "home/automation/vacation/state"
+  command_topic: "home/automation/vacation"
+  payload_on: 100
+  payload_off: 0
+  state_on: 100
+  state_off: 0
