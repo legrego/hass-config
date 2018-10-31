@@ -1,0 +1,5 @@
+dining_room:
+  name: Dining Room
+  entities:
+    - light.dining_room_light
+    - media_player.dining_room
