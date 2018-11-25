@@ -2,6 +2,7 @@ holiday_lights:
   name: Christmas Lights
   entities:
     - switch.sitting_room_stair_light
+    - switch.living_room_christmas_tree
+    - switch.sitting_room_christmas_tree
     - switch.outdoor_switch_1
     - switch.outdoor_switch_2
-    - switch.removable_plug_2
