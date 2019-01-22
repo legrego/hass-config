@@ -1,7 +1,6 @@
 light:
-  - platform: lifx
 
-  - platform: mqtt_template
+  - platform: mqtt
     name: "Fireplace Light"
     state_topic: "home/livingroom/fireplace_light/state"
     state_template: '{{ "on" if value|int > 0 else "off" }}'
@@ -15,7 +14,7 @@ light:
       {%- endif -%}
     command_off_template: "0"
 
-  - platform: mqtt_template
+  - platform: mqtt
     name: "Master Bedroom Light"
     state_topic: "home/masterbedroom/ceiling_light/state"
     state_template: '{{ "on" if value|int > 0 else "off" }}'
@@ -29,7 +28,7 @@ light:
       {%- endif -%}
     command_off_template: "0"
 
-  - platform: mqtt_template
+  - platform: mqtt
     name: "Dining Room Light"
     state_topic: "home/diningroom/light/state"
     state_template: '{{ "on" if value|int > 0 else "off" }}'
