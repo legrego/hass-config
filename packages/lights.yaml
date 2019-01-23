@@ -1,6 +1,7 @@
 light:
 
   - platform: mqtt
+    schema: template
     name: "Fireplace Light"
     state_topic: "home/livingroom/fireplace_light/state"
     state_template: '{{ "on" if value|int > 0 else "off" }}'
@@ -15,6 +16,7 @@ light:
     command_off_template: "0"
 
   - platform: mqtt
+    schema: template
     name: "Master Bedroom Light"
     state_topic: "home/masterbedroom/ceiling_light/state"
     state_template: '{{ "on" if value|int > 0 else "off" }}'
@@ -29,6 +31,7 @@ light:
     command_off_template: "0"
 
   - platform: mqtt
+    schema: template
     name: "Dining Room Light"
     state_topic: "home/diningroom/light/state"
     state_template: '{{ "on" if value|int > 0 else "off" }}'
