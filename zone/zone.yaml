@@ -18,3 +18,12 @@
   longitude: !secret longitude_larry_work
   radius: 1000
   icon: mdi:worker
+
+- name: Office
+  latitude: !secret latitude_home
+  longitude: !secret longitude_home
+  radius: 1
+  beacon:
+    uuid: !secret office_beacon_uuid
+    major: !secret office_beacon_major
+    minor: !secret office_beacon_minor

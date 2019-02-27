@@ -13,6 +13,9 @@ homeassistant:
   customize: !include_dir_merge_named customize
   packages: !include_dir_named packages
 
+# Enables system health
+system_health:
+
 # Enables the frontend
 frontend:
 
@@ -22,7 +25,7 @@ logger:
   logs:
     custom_components.elastic: debug
 
-# Enables the Elastic custom component (https://github.com/legrego/homeassistant-elasticsearch): 
+# Enables the Elastic custom component (https://github.com/legrego/homeassistant-elasticsearch):
 elastic:
   url: !secret elastic_url
   username: !secret elastic_username
@@ -40,7 +43,6 @@ alexa:
 
 # HTTP Settings
 http:
-  api_password: !secret api_password
   server_port: 9123
   base_url: !secret base_url
 
@@ -90,7 +92,7 @@ mqtt:
   username: !secret mqtt_username
   password: !secret mqtt_password
   protocol: 3.1.1
-  
+
 device_tracker:
   - platform: owntracks
     max_gps_accuracy: 200
@@ -99,7 +101,7 @@ device_tracker:
     username: !secret icloud_larry_username
     password: !secret icloud_larry_password
     account_name: Larry
-  
+
 media_player:
   - platform: spotify
     client_id: !secret spotify_client_id
