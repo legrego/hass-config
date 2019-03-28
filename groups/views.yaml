@@ -33,3 +33,4 @@ upstairs:
   view: yes
   entities:
     - group.master_bedroom
+    - group.nursery

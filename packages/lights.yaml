@@ -157,3 +157,10 @@ switch:
     command_topic: "home/sittingroom/christmas_tree"
     payload_on: 255
     payload_off: 0
+
+  - platform: mqtt
+    name: "Nursery Table Light"
+    state_topic: "home/bedroom1/table_light/state"
+    command_topic: "home/bedroom1/table_light"
+    payload_on: 255
+    payload_off: 0

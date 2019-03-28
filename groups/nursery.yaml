@@ -1,0 +1,4 @@
+nursery:
+    name: Nursery
+    entities:
+      - switch.nursery_table_light
